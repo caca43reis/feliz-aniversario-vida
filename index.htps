@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feliz Aniversário, Giovanni! 🎉</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('background.jpg.jpge') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(0,0,0,0.6);
+      backdrop-filter: blur(5px);
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .container {
+      background-color: rgba(0,0,0,0.6);
+      padding: 2rem;
+      border-radius: 15px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    }
+
+    h1, h2 {
+      color: #ffd700;
+      font-family: 'Pacifico', cursive;
+    }
+
+    .quiz, .affirmations {
+      margin-top: 2rem;
+      text-align: left;
+    }
+
+    .question {
+      margin: 1rem 0;
+    }
+
+    .affirmation {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 0.5rem;
+      border-left: 4px solid #ffd700;
+      margin: 0.5rem 0;
+    }
+
+    .footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .quiz input[type="radio"], .quiz input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .quiz input[type="text"] {
+      width: 100%;
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .quiz button {
+      margin-top: 1rem;
+      background-color: #ffd700;
+      color: #000;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .quiz button:hover {
+      background-color: #fff;
+    }
+
+    audio {
+      display: none;
+    }
+
+    .heart {
+      font-size: 3rem;
+      animation: beat 1s infinite;
+      color: #ff4e78;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <div class="container">
+    <div class="heart">❤️</div>
+    <h1>Feliz Aniversário, Giovanni! 🎂</h1>
+    <p>Hoje é um dia super especial, e eu não poderia deixar de celebrar cada instante dele com você! Neste aniversário, quero te desejar tudo de mais lindo que a vida pode oferecer. Que você continue sendo esse galego maravilhoso, cheio de luz e alegria!</p>
+    <p>Eu te amo pra caramba e sou grata por ter você na minha vida. Sua risada ilumina meus dias e seu carinho me faz sentir em casa. E não posso deixar de mencionar a sua família, que sempre me acolheu com tanto carinho. Cida, uma sogra incrível, a vovó é um encanto e sua irmã nem se fala!</p>
+    <p>Estou feliz por saber que está bem e com saúde, espero aproveitar os seus próximos aniversários com muito amor e prosperidade. Você é minha oração em forma de pessoa, espero conquistar tudo que sonho ao seu lado.</p>
+    <p>Que este novo ano traga muita saúde, amor e felicidade para você e todos nós. Vamos curtir muito e fazer novas memórias juntos! Parabéns, amor.</p>
+    <p><em>Com todo meu carinho,<br>Cássia.</em></p>
+
+    <div class="affirmations">
+      <h2>O que eu penso sobre você e afirmo 💖</h2>
+      <div class="affirmation">Você é a luz da minha vida.</div>
+      <div class="affirmation">Admiro tanto sua bondade e seu carinho.</div>
+      <div class="affirmation">Sua presença me faz sentir tão feliz.</div>
+      <div class="affirmation">Estarei sempre ao seu lado.</div>
+      <div class="affirmation">Juntos, podemos conquistar tudo.</div>
+      <div class="affirmation">Você é muito especial para mim. Te amo mais a cada dia.</div>
+      <div class="affirmation">Você é meu melhor amigo e amor.</div>
+      <div class="affirmation">Meu coração é seu, sempre.</div>
+    </div>
+
+    <div class="quiz">
+      <h2>Quiz de Aniversário 🎮</h2>
+      <form onsubmit="return checkAnswers(event)">
+        <div class="question">
+          <strong>1. Qual é a comida favorita dele?</strong><br>
+          <label><input type="radio" name="q1" value="a"> Pizza</label><br>
+          <label><input type="radio" name="q1" value="b"> Sushi</label><br>
+          <label><input type="radio" name="q1" value="c"> Hamburguer</label><br>
+          <label><input type="radio" name="q1" value="d"> Salada</label>
+        </div>
+        <div class="question">
+          <strong>2. Qual é o filme favorito dele?</strong><br>
+          <label><input type="radio" name="q2" value="a"> Ação</label><br>
+          <label><input type="radio" name="q2" value="b"> Comédia</label><br>
+          <label><input type="radio" name="q2" value="c"> Romance</label><br>
+          <label><input type="radio" name="q2" value="d"> Terror</label>
+        </div>
+        <div class="question">
+          <strong>3. Qual é o hobby preferido dele?</strong><br>
+          <label><input type="radio" name="q3" value="a"> Jogar videogame</label><br>
+          <label><input type="radio" name="q3" value="b"> Fazer esportes</label><br>
+          <label><input type="radio" name="q3" value="c"> Assistir séries</label><br>
+          <label><input type="radio" name="q3" value="d"> Ler livros</label>
+        </div>
+        <div class="question">
+          <strong>4. Qual é o maior sonho dele?</strong><br>
+          <label><input type="checkbox" name="q4" value="a"> Viajar pelo mundo</label><br>
+          <label><input type="checkbox" name="q4" value="b"> Ter uma casa própria</label><br>
+          <label><input type="checkbox" name="q4" value="c"> Ser reconhecido em sua carreira</label><br>
+          <label><input type="checkbox" name="q4" value="d"> Ter uma família grande</label>
+        </div>
+        <div class="question">
+          <strong>5. Qual foi o primeiro presente que ele te deu?</strong><br>
+          <input type="text" name="q5" placeholder="Digite sua resposta">
+        </div>
+        <div class="question">
+          <strong>6. Qual é a música que mais significa para vocês?</strong><br>
+          <input type="text" name="q6" placeholder="Digite sua resposta">
+        </div>
+        <button type="submit">Ver Resultado</button>
+      </form>
+      <div id="result"></div>
+    </div>
+
+    <div class="footer">
+      Criado com amor por Cássia 💌 - 09/07/2025
+    </div>
+  </div>
+
+  <script>
+    function checkAnswers(event) {
+      event.preventDefault();
+      const answers = {
+        q1: 'c',
+        q2: 'd',
+        q3: 'c',
+        q5: 'uma ida ao cinema',
+        q6: 'if i ain’t got you'
+      };
+      const form = event.target;
+      let score = 0;
+
+      if (form.q1.value === answers.q1) score++;
+      if (form.q2.value === answers.q2) score++;
+      if (form.q3.value === answers.q3) score++;
+      const checkboxes = form.querySelectorAll('input[name="q4"]:checked');
+      if (checkboxes.length === 4) score++;
+      if (form.q5.value.toLowerCase().trim() === answers.q5) score++;
+      if (form.q6.value.toLowerCase().trim() === answers.q6) score++;
+
+      document.getElementById("result").innerHTML = `<p>Você acertou ${score} de 6 perguntas! 🎉</p>
+        <p>${score >= 4 ? 'Você me conhece tão bem... 💕' : 'Mesmo assim, eu te amo demais! 💘'}</p>`;
+    }
+  </script>
+</body>
+</html>
